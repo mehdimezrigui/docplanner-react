@@ -1,0 +1,417 @@
+body{
+  width:100%;
+  font-family: Helvetica Neue,Helvetica,Arial,sans-serif;
+  color: #747474;
+  margin: 0;
+  z-index: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.App {
+  text-align: left;
+}
+.logo-Doc {
+  width: 268px;
+  height: 33px;
+  margin-top:5px;
+
+}
+.header-main{
+  display: flex;
+  justify-content: space-around;
+  width:100%;
+  position: fixed;
+  z-index: 2;
+  height: 60px;
+  top:0px;
+  left: 0px;
+  padding-top: 10px;
+  background: hsla(0,0%,100%,.98);
+  box-shadow: 0 -2px 10px 0 rgba(0,0,0,.15);
+  transition: box-shadow .25s ease 0s;
+}
+.main-nav{
+  display: flex;
+  align-items: center;
+  
+}
+main{
+   z-index: 1;
+   margin-top: 100px;
+   position: relative;
+}   
+
+ul {
+  list-style: none;
+}
+
+li{
+  padding:10px;
+
+}
+h1{
+  font-size: 34px;
+  font-weight: 300;
+}
+a{
+  color: #747474;
+  font-family: Helvetica Neue,Helvetica,Arial,sans-serif;
+  text-decoration: none;
+  font-size:15px;
+}
+.header-main li a:hover {
+color:#00b39b;
+}
+.dropdown-department{
+  display: none;
+  position: absolute;
+  min-width: 220px;
+  margin-left: -100px;
+  background: #fff;
+  box-shadow: 0 5px 10px 0 #d3cfc9;
+  
+}
+
+.dropdown-department {
+  padding:15px 0px;
+}
+.dropdown-department a{
+  text-decoration: none;
+  color:#747474;
+  padding: 10px 0px;
+}
+.dropdown-department li{
+  margin:5px 0;
+  padding: 10px 0px;
+}
+.dropdown-department li a{
+  padding: 2px 13px;
+}
+.dropdown-department li a:hover{
+      color: #00b39b;
+}
+.dropdown-department li:hover{
+  background-color: #d6e8e6;
+}
+.main-nav li:hover .lien{
+  color: #00b39b;
+}
+li:hover .dropdown-department {
+  display: block;
+}
+
+.lead-logo{
+  display: block;
+  margin: 90px auto;
+  margin-bottom: 30px;
+  max-width: 100%;
+  height: 70px;
+  width: 70px;
+}
+
+.lead-section{
+  display: flex;
+  justify-content: center;
+  zoom: 1;
+  max-width: 1015px;
+  padding: 0 20px;
+  margin: 0 auto;
+  box-sizing: border-box;
+  position: relative;      
+  }
+h1{
+  font-size: 2.125rem;
+  color: #00b39b;
+  text-align: center;
+}
+.col {
+  width: 50%;
+  float: left;
+  min-height: 1px;
+  padding: 10px;
+}
+h5{
+  font-weight: 100;
+}
+.col p{
+  margin: .8em 0;
+  line-height: 1.75;
+  font-weight: 400;
+}
+.lead-section{
+  display: flex;
+  justify-content: center;
+  zoom: 1;
+  max-width: 1015px;
+  padding: 0px 10px;
+  margin: 0 auto;
+  position: relative; 
+}
+.box-patient{
+  width: 50%;
+  height: 365px;
+  border-radius: 20px;
+  margin: 40px 10px;
+  padding: 20px 35px;
+  color:#fff;
+  overflow: hidden;  
+  background: #00ccb1;
+}
+.box-doctor{
+  width: 50%;
+  height: 365px;
+  border-radius: 20px;
+  margin: 40px 10px;
+  padding: 20px 35px;
+  color:#fff;
+  overflow: hidden;  
+  background: #3d83df;
+}
+h5{
+  margin:05px;
+}
+select{
+  width: 43%;
+  background-color: #fff;
+  border-radius: 5px;
+  padding: 10px;
+  height: auto;
+  text-transform: uppercase;
+  margin: 0px;
+}
+.box-image-patient{
+  width: 100%;
+  margin-left: 40%;
+  margin-bottom: 20px;
+  margin-top: -2.3em;
+  padding: 0;
+}
+.box-image-doctor{
+  width: 100%;
+  margin-left: 40%;
+  margin-top: 0.3em;
+  padding: 0;
+}
+.brands{
+  width: auto;
+  display: flex;
+  justify-content: center;
+  margin: 0.5rem auto 3.125rem;
+}
+.brands-logo{
+  display:flex;
+  flex-wrap: wrap;
+  padding-right:100px;
+  width: 67%;
+}
+.brands-logo a{
+  padding: 0px 10px;
+}
+.brands ul{
+  padding-top: 0px;
+}
+.traitement{
+  width:  140px;
+  height: 28px;
+  fill: #c7c4c4;
+}
+.brands h2{
+  width: 21%;
+  height: auto;
+  letter-spacing: .3px;
+  font-size: 25px;
+  font-weight: 200;
+  margin: .25em 0 .35em;
+  padding-left: 180px;
+  padding-top: 20px;
+  color: #00ccb1;
+}
+
+.stat{
+      background: #e5faf8;
+      background-image: linear-gradient(-45deg,rgba(0,204,177,.01) 5%,rgba(61,199,223,.1));
+      padding:0 30px;
+      overflow: hidden;
+      margin: 20px auto;
+      height: 600px;
+      box-sizing: border-box;
+      display: flex;
+      justify-content: center;
+      width: 100%;
+}
+.description-stat h2{
+  letter-spacing: 0.3px;
+  font-size:32px;
+  font-weight:300;
+  padding-left: 100px;
+  color:#00ccb1;
+  margin-right: 30px;
+
+}
+.brands-logo a:hover svg{
+  fill:#00ccb1;
+}
+.stat p{
+  font-size: 16px;
+  color:#747474;
+  padding-left: 100px;
+  font-weight:100;
+
+}
+.stat img{
+  padding: 40px 0px;
+}
+.description-stat{
+width:50%;
+padding-top: 25px;
+}
+.grid-stat{
+padding: 20px;
+width: 40%;
+display: flex;
+flex-wrap: wrap;
+}
+section{
+  width: 100%;
+}
+.box-stat{
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  
+  width: 40%;
+  height: 250px;
+  margin: 5px 10px;
+  background-color: #fff;
+  border-radius: 5px;
+  box-shadow: 0 1px 4px 0 rgba(0,0,0,.05);
+}
+.stat-doctor{
+  position: relative;
+  bottom: 15px;
+}
+.stat-patient{
+  position: relative;
+  top: 10px;
+}
+.stat-appointments{
+  position: relative;
+  bottom: 15px;
+}
+.stat-countries{
+  position: relative;
+  top: 10px;
+}
+.box-stat img{
+  margin: 5px;
+  padding: 20px 10px;
+  max-width: 50px;
+  height: 40px;
+}
+.box-stat h3{
+  font-size: 26px;
+  color: #00b39b;
+  margin:0;
+  font-weight: 200;
+  padding: 0px 10px;
+  text-align: center;
+}
+.box-stat p{
+  margin:5px;
+  text-align: center;
+  font-size: 13px;
+  padding:10px;
+}
+.province-office{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 20px auto;
+  font-size: .875em;
+  text-align: center;
+  line-height: 1.7142857143;
+}
+.province-office h2{
+  width: 460px;
+  font-size: 2.1428571429em;
+  color: #00b39b;
+  font-weight: 300;
+  letter-spacing: .3px;
+}
+.province-office p{
+  width:460px;
+}
+
+.office{
+  width: 75%;
+  flex-direction: row;
+  display:flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  z-index: 1;
+  margin-bottom: 40px;
+}
+.box-office{
+  background: #fff;
+  border: 1px solid rgba(0,0,0,.03);
+  border-radius: 6px;
+  overflow: hidden;
+  max-width: 311px;
+  z-index: 2;
+  position: relative;
+  display:block;
+  color: #747474;
+  margin-bottom: 10px;
+}
+.button-office{
+  display: block;
+  position: relative;
+  outline: 0;
+  border: 0;
+  border-radius: 4px;
+  font-size: 11px;
+  padding: 0.5em 1.5em;
+  background: #3d83df;
+  font-family: Helvetica Neue,Helvetica,Arial,sans-serif;
+  color: #fff;
+  font-weight: 400;
+  letter-spacing: .04em;
+  font-size: .75rem;
+  text-align: center;
+  text-decoration: none;
+  height: 20px;
+  margin: 10px 5px;
+}
+.province-office  a{
+  text-decoration: none;
+  display:flex;
+  margin: 10px;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+.province-office h3{
+  padding: 0 20px;
+}
+.province-office span{
+  margin: 10px 20px;
+}
+.province-office a:hover {
+  box-shadow: 0 20px 50px 0 rgba(0,0,0,.13);
+}
+.footer-sec{
+  border-top: 0.1px solid #eceaea; 
+  padding: 0 20px;
+  padding-top: 40px;
+  margin: 0 auto;  
+  text-align: center;
+}
+.footer-sec p{
+  font-size: 12px;
+  color:#c7c4c4;
+}
+.footer-sec a{
+  font-size: 12px;
+  text-decoration: none;
+  color: blue;
+}
